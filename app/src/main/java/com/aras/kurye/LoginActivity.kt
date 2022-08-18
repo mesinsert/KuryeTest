@@ -4,7 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.viewpager2.widget.ViewPager2
 import com.aras.kurye.databinding.ActivityLoginBinding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class LoginActivity : AppCompatActivity() {
@@ -30,10 +33,11 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                Toast.makeText(this, "Parola yanlış", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Yanlış email ya da şifre", Toast.LENGTH_SHORT).show()
             }
 
         }
+
 
 
 
